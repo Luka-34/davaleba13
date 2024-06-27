@@ -1,12 +1,12 @@
-import { Component } from "react";
+import { PureComponent } from "react";
 
-class TasksList extends Component {
+class TasksList extends PureComponent {
     
     state = { 
         inputValue: '',
         description: [
-            {toDo: "mkdmdkdmedmdmkd", id: 1, completed: false}, 
-            {toDo: "kfmkmkmmckcmkdc", id: 2, completed: false}
+            {toDo: "Task1", id: 1, completed: false}, 
+            {toDo: "Task2", id: 2, completed: false}
         ]
     } 
 
