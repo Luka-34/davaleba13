@@ -1,13 +1,31 @@
-import { Component } from "react"
-import './App.css'
-import TasksList from "./TasksList"
+import React, { useState } from "react";
+import "./App.css";
+import Backlog from "./components/Backlog";
+import Progress from "./components/Progress";
+import Done from "./components/Done";
 
-class App extends Component {
- render(){
-    return (
-        <TasksList/>
-    )
- }
-}
 
-export default App
+const App = () => {
+  const containerStyle = {
+    display: 'flex',
+    gap: '150px',
+    justifyContent: 'center',
+
+  };
+
+  return (
+    <div style={containerStyle}>
+        <div>
+      <Backlog />
+      </div>
+      <div>
+      <Progress/>
+      </div>
+      <div>
+      <Done/>
+      </div>
+    </div>
+  );
+};
+
+export default App;

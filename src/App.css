@@ -4,68 +4,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
 body {
-  background-color: black;
-}
-
-.add-input {
-  padding: 8px;
-  width: 250px;
-  border: none;
-}
-
-.add {
-  padding: 8px;
-  border-radius: 5px;
-  border: none;
-  margin-left: 2px;
-  cursor: pointer;
-}
-
-.cont {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 100px;
-}
-
-.toDO {
-  background-color: #ffffff;
-  width: 300px;
-  height: 400px;
-  border-radius: 15px;
-  margin-top: 7px;
-  box-shadow: 0 4px 8px 0 rgb(255, 255, 255), 0 6px 20px 0 rgb(255, 255, 255);
-}
-
-.done {
-  background-color: #ffffff;
-  width: 300px;
-  height: 400px;
-  border-radius: 15px;
-  margin-top: 7px;
-  box-shadow: 0 4px 8px 0 rgb(255, 255, 255), 0 6px 20px 0 rgb(255, 255, 255);
-}
-
-.cont2 {
-  display: flex;
-  gap: 50px;
-  margin-top: 30px;
-}
-
-.heading {
-  text-align: center;
-  font-family: "Playwrite MX", sans-serif;
-}
-
-.title {
-  color: #ffffff;
-  font-family: "Playwrite MX", sans-serif;
-}
-
-.task {
-  color: #000000;
+  background-color: #f2f2f2;
 }
