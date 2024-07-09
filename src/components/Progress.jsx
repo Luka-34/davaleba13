@@ -7,9 +7,6 @@ const Progress = () => {
         { toDo: 'Task2', id: 2, completed: false }
     ])
 
-    const [doneTasks, setDoneTasks] = useState([])
-
-
     const colors = ["#3d99e2", "#3d99e2","#fac622","#92ce54"]
     const random = colors[Math.floor(Math.random() * colors.length)]
 
@@ -45,11 +42,6 @@ return
         setInputValue('')
     }
 
-    const moveToDone = (id) => {
-        const taskToMove = description.find(task => task.id === id)
-        setDescription(prevDescription => prevDescription.filter(task => task.id !== id))
-        setDoneTasks(prevTasks => [...prevTasks, taskToMove])
-    }
     const addstyle = {
         width: '115%',
         backgroundColor: '#ffffff',
@@ -95,9 +87,8 @@ return
                 <ul>
         {description.map((task) => (
             <li key={task.id}>
-                <span style={taskSyle} draggable={true}>
+                <span style={taskSyle}>
                     {task.toDo}
-                    <button onClick={() => moveToDone(task.id)}>Done</button>
                 </span>
             </li>
         ))}

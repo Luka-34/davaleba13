@@ -40,20 +40,6 @@ const Done = () => {
         setInputValue('');
     }
 
-    const toggleComplete = (id) => {
-        setDescription((prevDescription) =>
-            prevDescription.map((task) =>
-                task.id === id ? { ...task, completed: !task.completed } : task
-            )
-        )
-    }
-
-    const deleteTask = (id) => {
-        setDescription((prevDescription) =>
-            prevDescription.filter((task) => task.id !== id)
-        )
-    }
-
     const addstyle = {
         width: '115%',
         backgroundColor: '#ffffff',
@@ -102,8 +88,6 @@ const Done = () => {
                                 <span style={taskSyle}>
                                     {task.toDo}
                                 </span>
-                                <button onClick={() => deleteTask(task.id)}>Delete</button>
-                                <button onClick={() => toggleComplete(task.id)}>complete</button>
                             </li>
                         ))}
                     </ul>
